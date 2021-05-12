@@ -1318,9 +1318,14 @@ public class FinestWebViewActivity extends AppCompatActivity
         startActivity(emailIntent);
 
         return true;
-      } else {
+      } /*******************************************************
+       * Added in support for whatsapp:
+       *******************************************************/
+      
+      else {
         return super.shouldOverrideUrlLoading(view, url);
       }
+      
     }
 
     @Override
